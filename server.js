@@ -13,7 +13,7 @@ nunjucks.configure('views', {
 });
 
 
-server.get('/', (req, res) => res.render('index'));
+server.get('/', (req, res) => res.render('about'));
 server.get('/lessons', (req, res) => res.render('lessons'));
 
 server.listen(5000, () => console.log('server is running'));

@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "layout.html" %}
+
+{% block head %}
+  <title>Lessons - My Profile</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/style.css">
-  <title>My Profile</title>
-</head>
-<body>
-  <header>
-    <div class="links">
-      <a href="/" title="About">About</a>
-      <a href="/lessons" title="Lessons">Lessons</a>
-    </div>
-  </header>
+{% endblock %}
+
+{% block content %}
   <div id="wrapper">
     <h1 title="Lessons">Lessons</h1>
   </div>
@@ -124,5 +116,4 @@
     </div>
   </div>
   <script src="./script.js"></script>
-</body>
-</html>
+{% endblock %}
