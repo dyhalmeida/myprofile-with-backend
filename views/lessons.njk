@@ -13,8 +13,13 @@
 
     {% for item in items %}
       <div class="card">
-        <div class="card-image-container">
+        <div class="card-image-container {{ 'featured-wrapper' if item.featured }}">
           <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" title="{{item.title}}" alt="Imagem de {{item.title}}">
+          {% if item.featured %}
+            <div class="featured">
+              featured
+            </div>
+          {% endif %}
         </div>
         <div class="card-content">
           <p>

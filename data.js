@@ -3,7 +3,8 @@ module.exports = [
     id:"Fbu7z5dXcRs",
     title:"SQL no Node.JS com Sequelize",
     duration:"30 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id:"ICIz5dE3Xfg",
@@ -15,7 +16,8 @@ module.exports = [
     id:"3tB0uDliS6Y",
     title:"Masterizando o Insomnia",
     duration:"34 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
   {
     id:"VpeU3VpszAc",
@@ -33,6 +35,7 @@ module.exports = [
     id:"0mYq5LrQN1s",
     title:"Typescript, o início de forma prática",
     duration:"70 min",
-    price: "Free"
+    price: "Free",
+    featured: true
   },
 ]
