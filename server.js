@@ -36,4 +36,13 @@ server.get('/', (req, res) => {
 
 server.get('/lessons', (req, res) => res.render('lessons', { items: videos }));
 
+server.get('/video', (req, res) => {
+  const { id } = req.query;
+  const video = videos.find(video => video.id === id);
+  if (!video) {
+    return res.redirect('/lessons');
+  }
+  return res.render('video', { ...video });
+});
+
 server.listen(5000, () => console.log('server is running'));
